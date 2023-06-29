@@ -1,0 +1,8 @@
+.login__Container {
+    background: transparent;
+    display: flex;
+    justifyContent-content:center;
+    align-items:center;
+    font-size:1.2rem;
+    position:sticky;
+}

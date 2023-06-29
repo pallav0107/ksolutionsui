@@ -1,0 +1,46 @@
+.Header {
+  flex-grow: 1;
+}
+@media (max-width: 500px) {
+  .Header {
+    display: none !important;
+  }
+}
+@media (min-width: 501px) {
+  .Hamburger {
+    display: none !important;
+  }
+}
+.Hamburger {
+  flex-grow: 1;
+}
+
+.Header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  marginTop: 18px;
+}
+
+.Header__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background: #cd9042;
+}
+
+.Header__marginRight {
+  align-items: right;
+  width: 30%;
+  margin-right: 5%;
+}
+
+.Header__Row {
+  display: flex;
+  flex-direction: row;
+  marginTop: 2%;
+  width: 100%;
+}
+.test:hover {
+  color: white;
+  backgroundColor: inherit;
+}

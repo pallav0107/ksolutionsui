@@ -1,0 +1,81 @@
+/* CSS Styles */
+@media screen and (max-width: 767px) {
+  .paper {
+    padding: 10px;
+    font-size: 24px;
+    marginTop: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .paper {
+    padding: 20px;
+    font-size: 28px;
+    marginTop: 100px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .paper {
+    padding: 30px;
+    font-size: 30px;
+    marginTop: 150px;
+  }
+}
+
+
+
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+
+  /* Then we define the flow direction 
+       and if we allow the items to wrap 
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+  flex-flow: row wrap;
+
+  /* Then we define how is distributed the remaining space */
+  justifyContent-content: space-around;
+
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 50px;
+  height: 150px;
+  marginTop: 10px;
+  line-height: 150px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align: center;
+}
+
+.item-container {
+  position: relative;
+}
+
+.gif-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -1;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  backgroundColor: aliceblue;
+}
