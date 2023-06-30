@@ -1,27 +1,23 @@
-# Use an official Node.js runtime as the base image
-FROM node:14.21.3-alpine
+# Use the base Node.js 16 Alpine image
+FROM node:16-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
 
-# Install an older version of npm globally  -g npm@9.6.7
-RUN npm install
-
-# Copy package.json and package-lock.json (if available)
+# Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
-# Install dependencies
-RUN npm ci --legacy-peer-deps
+# Install project dependencies
+RUN npm install
 
-# Copy the rest of the application code
+# Copy the entire local directory to the working directory
 COPY . .
 
-# Build the React app for production
+# Build the optimized production version of the project
 RUN npm run build
 
-# Expose a port if your React app requires it (e.g., for testing or development purposes)
+# Expose port 3000
 EXPOSE 3000
 
 # Set the command to run when the container starts
 CMD [ "npm", "start" ]
-
