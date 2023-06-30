@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install project dependencies
-RUN npm install
+RUN npm install -g npm@9.7.2
 
 # Copy the entire local directory to the working directory
 COPY . .
