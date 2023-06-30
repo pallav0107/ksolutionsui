@@ -1,5 +1,6 @@
 build:
   docker:
-    web: .
+    web: Dockerfile
+
 release:
   image: web
