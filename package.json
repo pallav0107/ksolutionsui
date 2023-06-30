@@ -12,6 +12,7 @@
     "firebase": "^8.1.1",
     "postcss-safe-parser": "^6.0.0",
     "react": "^16.8.2",
+    "react-scripts": "^5.0.0",
     "react-alice-carousel": "^2.1.0",
     "react-bootstrap": "^1.4.0",
     "react-dom": "^16.8.2",
