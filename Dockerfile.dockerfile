@@ -1,5 +1,5 @@
 # Use the base Node.js 16 Alpine image
-FROM node:16-alpine
+FROM node:18-alpine
 
 # Set the working directory inside the container
 WORKDIR /app
@@ -7,8 +7,11 @@ WORKDIR /app
 # Copy package.json and package-lock.json to the working directory
 COPY package*.json ./
 
-# Install project dependencies
-RUN npm install -g npm@9.7.2
+# Clear the npm cache
+RUN npm cache clean --force
+
+# Upgrade npm to the latest version
+RUN npm install -g npm@latest
 
 # Copy the entire local directory to the working directory
 COPY . .
