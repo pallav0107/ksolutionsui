@@ -11,13 +11,13 @@ import "firebase/firestore";
 // import ReCAPTCHA from "react-google-recaptcha";
 
 const firebaseConfig = {
-  apiKey: process.env.API_KEY,
-  authDomain: process.env.AUTH_DOMAIN,
-  projectId: process.env.PPROJECTID,
-  storageBucket: process.env.BUCKET,
-  messagingSenderId: process.env.SENDERID,
-  appId: process.env.APPID,
-  measurementId: process.env.MESURE,
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PPROJECTID,
+  storageBucket: process.env.REACT_APP_BUCKET,
+  messagingSenderId: process.env.REACT_APP_SENDERID,
+  appId: process.env.REACT_APP_APPID,
+  measurementId: process.env.REACT_APP_MESURE,
 };
 
 firebase.initializeApp(firebaseConfig);
@@ -25,8 +25,13 @@ firebase.initializeApp(firebaseConfig);
 const firestore = firebase.firestore();
 
 const saveFormData = async (data) => {
-  const collectionRef = firestore.collection("ksolutions-contact-as");
-  await collectionRef.add(data);
+  const collectionRef = firestore.collection("ksoltution-FreeQuote");
+  await collectionRef.add(data).then((docRef) => {
+    console.log('Document written with ID: ', docRef.id);
+  })
+  .catch((error) => {
+    console.error('Error adding document: ', error);
+  });;
 };
 
 const FreeQuotes = ({ handleSubmit, submitting }) => {
