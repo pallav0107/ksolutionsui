@@ -1,0 +1,71 @@
+@font-face {
+    font-family: "Manrope-Local";
+    src: url('../assets/fonts/Manrope-Regular.ttf');
+}
+
+h1{font-size: 1.2em;}
+
+.home-title h1{
+    font-size: 4.9em;
+}
+
+.solu-pro-text span{
+    font-size: 1.35em;
+    font-weight: 700;
+}
+
+.container-inside{
+    h1{
+        margin: 25px 0px;
+        line-height: 60px;        
+    }
+    p{ 
+        font-size: 1.34em;
+        font-weight: 500;
+        margin: 25px 0px;
+    }
+}
+
+.cardPane{
+    h3{
+        font-size:1.84em;
+        font-weight: 800;
+        margin:10px 0px 15px 0px;   
+    }
+    p{
+        font-size:1.25em;
+        font-weight: 500;
+        // text-align: center;
+    }
+    a{
+        font-size:1.25em;
+        font-weight: 700;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+}
+.clientBG{
+    h3{
+        font-size:1.84em;
+        font-weight: 500;
+    }
+}
+strong{
+    font-size: 1.3em;
+    font-weight: 800;
+}
+.iconImgCenter{
+    text-align: center;
+    margin:10px 0px;
+}
+.exelexperties{
+    p.chooseus{
+        color:$solsColor;
+        text-transform: uppercase;
+        font-weight: 800;
+    }
+    h2{
+        font-weight: 800;
+    }
+}

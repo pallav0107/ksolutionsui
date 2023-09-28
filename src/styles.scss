@@ -1,0 +1,156 @@
+//partial scss files
+@import './partial-scss/variables';
+@import './partial-scss/functions';
+@import './partial-scss/mixins';
+@import './partial-scss/typography';
+@import './partial-scss/breakpoints';
+@import './partial-scss/layout';
+@import './partial-scss/gridlayout';
+
+//fonts
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+
+body {
+    font-family:$fontsFamily;
+    font-size: $fontsSize;
+    color: $fontsColor;
+    margin:0px auto;
+    padding:64px 0px 0px 0px;
+    width: $screenWidth;
+    height: $screenHeight;
+  }
+  .contactpane ul{
+    text-align: left;
+  }
+
+  a{text-decoration: none;}
+  
+  .mzero{
+    margin:0px !important;
+  }
+  .toppadzero{
+    padding-top: 0px !important;
+  }
+
+  ul{
+    list-style: none;
+    margin:0px;
+    padding: 0px;
+  }
+  .alignCenter{
+    text-align: center;
+    margin: 0px auto;
+  }
+  
+  .container-fluid{
+    color: $bgWhite;
+    font-size: 12px;
+    font-weight: 600;
+    background-image: url("./assets/nasaq1p7bh3shj8unsplash-1@2x.png");
+    background-position: left bottom;
+    background-attachment: inherit;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.container-inside{
+    @extend .container-fluid;
+    background-image:none;
+    background-color: $bgWhite;
+    color:$fontsColor;
+}
+.stickyHeader{
+  position: fixed;
+  width:100%;
+  max-height: 68px;
+  top:0px;
+  background-image: url("./assets/nasaq1p7bh3shj8unsplash-1@2x.png");
+  background-position: left top;
+  z-index: 9;
+}
+
+.foorprintBG{
+  @extend .container-inside;
+  background-color: $footprintBG;
+}
+
+.clientBG{
+  @extend .container-inside;
+  background-color: $clientScrBG;
+  text-align: center;
+}
+
+.cardPane{
+  box-sizing: border-box;    
+  background:$bgWhite;
+  border:solid 1px $cardBorder;
+  border-radius: 10px;
+  padding:25px;
+  a{
+      float: right;
+      display: flex;
+      align-items: center;
+      color:$readMore;
+      img{
+        margin-left: 5px;
+        width: 15px;
+    }
+  }
+}
+
+.cardsBox{
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contactpane{
+  //@extend .container-inside;
+  background-image: url('./assets/background1.svg');
+  background-repeat: no-repeat;
+  background-position: 0%;
+  background-color: $seablueBG;
+  border-radius: 15px;
+  padding: 50px;
+  background-position:initial;
+  h1{
+      margin: 0px;
+      // font-size: 4.17em;
+  }
+  ul {
+      li{
+          font-size: 1.5em;
+          padding:10px;
+      img{
+          margin-right: 20px; 
+          vertical-align: middle;
+      }
+  }
+}
+}
+.bordercurved{
+  width: 200px;
+  height: 10px;
+  border-radius: 100%;
+  border-top: solid 3px $bordercurvecolor;
+  // margin: 0px auto;
+}
+
+input, textarea {
+  border-radius: 5px;
+  border: solid 1px $inputbordercolor;
+  padding:5px;
+}
+input:focus, textarea:focus {
+  outline:solid 2px $fontSpecialColor;
+}
+
+.sendbtn{
+  @extend .btn-quote;
+  border-radius: 24px;
+  display: block;
+  margin: 0 auto;
+  font-weight: bold;
+  min-width: 80px;
+}

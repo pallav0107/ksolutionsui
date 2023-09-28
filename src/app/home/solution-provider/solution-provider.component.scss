@@ -1,0 +1,40 @@
+@import '../../../partial-scss/variables';
+
+.home-solutionsPro{
+    width: 100%;
+    align-items: flex-end;
+
+    .solu-pro-text{
+        div{
+            margin-bottom: 15px;
+        }
+        span{
+            color: $fontSpecialColor;
+        }
+        
+        ul{
+            list-style-type: none;
+            display: flex;
+            padding: 0px;            
+            li{
+                border:solid 1px $fontSpecialColor;
+                border-radius: 8px;
+                padding:10px;
+                margin-right: 16px;
+            }
+        }
+    }
+
+    .solu-pro-quality{
+        ul{
+            list-style-type: none;
+            display: flex;
+            padding: 0px;
+            align-items: end;
+            // li{
+            //     display: inline-flex;
+            //     align-items: center;
+            // }            
+    }
+}
+}

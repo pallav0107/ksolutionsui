@@ -1,0 +1,100 @@
+@import '../../partial-scss/variables';
+
+.serives-pro-icons{
+    display:flex;
+    align-items: center;
+    a{
+        // font-size: 1.4em;
+        color:$fontsColor;
+        align-items: center;
+        display: flex;
+        border-bottom: 3px solid #fff;
+        // padding: 0px 0px 6px 0px;
+        &:hover{
+           border-bottom: 3px solid $fontsColor;
+        //    padding: 0px 0px 6px 0px;
+        }
+       
+        &.cloudDev:hover{
+            color:$cloudDevColor; 
+            border-color: $cloudDevColor;
+        }
+
+        &.sec:hover{
+            color:$secColor; 
+            border-color: $secColor;
+        }
+        &.dataLot:hover{
+            color:$dataLotai; 
+            border-color: $dataLotai;
+        }
+        &.network:hover{
+            color:$network; 
+            border-color: $network;
+        }
+        &.managedSer:hover{
+            color:$managedSer; 
+            border-color: $managedSer;
+        }  
+        &.web3:hover{
+            color:$webThree; 
+            border-color: $webThree;
+        }     
+    }
+    a.managedSer{
+        img{ width:13%;}
+    }
+}
+.iconImgCenter img{
+    min-height: 40px;
+    width:35px;
+    height: 35px;
+}
+.cardPane{
+        position: relative;
+        z-index: 0;
+        overflow: hidden;
+        &:before {
+            content: "";
+            position: absolute;
+            transform: scale(1);
+            transition: transform 1s ease-in-out;
+            border-radius: 100%;
+            width: 250px;
+            height: 250px;
+          }
+          &.lightPurpleColorBG:before{
+            background-color: $lightViolet;
+            top: -100px;
+            left: -50px;
+            }
+        &.lightGreenColorBG:before{
+            background-color: $lightGreen;
+            top: -103px;
+            right: -53px;
+        }
+        &.lightYellowColorBG:before{
+            background-color: $lightYellow;
+            bottom: -83px;
+            right: -47px;
+        }
+        &.lightBrownColorBG:before{
+            background-color: $lightBrown;
+            top: -93px;
+            right: -75px;
+        }
+        &.lightBlueColorBG:before{
+            background-color: $lightBlue;
+            left: -60px;
+            bottom: -60px;
+        }
+        &.lightRedColorBG:before{
+            background-color: $lightred;
+            top: -101px;
+            right: -1px;
+        }
+        
+        &:hover:before {
+        transform: scale(10);
+        }
+}

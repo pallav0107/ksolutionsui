@@ -1,0 +1,18 @@
+@import '../../partial-scss/variables';
+
+.grid {
+    display: grid;
+    gap: 15px 15px;
+    white-space: wrap;
+    padding: 15px 0px;
+    // margin: 0px auto;
+    color:$fontsColor;
+}
+.textareabox{
+    // text-align: center;
+    // margin: 0px auto;
+}
+.textboxMsg{
+    height: 100px;
+    margin-bottom: 15px;
+}

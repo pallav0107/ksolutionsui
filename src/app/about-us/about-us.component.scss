@@ -1,0 +1,16 @@
+
+.teamprofile{
+    width:150px;
+    text-align: center;
+    img{
+        display: block;
+        clip-path: circle(45%);
+    }
+    span{
+        display: block;
+        font-weight: 800;
+        &:last-child{
+            font-weight: normal;
+        }
+    }
+}

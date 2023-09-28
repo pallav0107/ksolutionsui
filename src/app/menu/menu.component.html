@@ -1,0 +1,22 @@
+<div class="closehamburger" [class.show]="isDivVisible" [class.hide]="!isDivVisible">X</div>
+<div class="header-column">
+    <div class="hamburger" #humburger>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>   
+    <div class="ksolution-logo">
+        <img src="../../assets/logo-ksolution.png"/>Ksolutions
+    </div>
+    <nav #menus [class.show]="isDivVisible" [class.hide]="!isDivVisible">
+        <ul class="menu-row">
+            <li><a routerLinkActive="active" routerLink="/">Home</a>                
+            <li><a href="" routerLinkActive="active" routerLink="/services">Services</a></li>
+            <li><a href="" routerLinkActive="active" routerLink="/capabilities">Capabilities</a></li>
+            <!-- <li><a href="" routerLinkActive="active" routerLink="/test">test</a></li> -->
+        </ul>
+    </nav> 
+    <div class="top-quote" [class.show]="!isDivVisible" [class.hide]="isDivVisible">
+        <button class="btn-quote">Get a Quote</button>
+    </div>
+</div>
