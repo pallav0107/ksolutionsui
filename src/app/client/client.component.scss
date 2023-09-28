@@ -1,0 +1,12 @@
+.clientBG{
+    ul{
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    li{
+        margin: 0px 25px 0px 0px;
+    }
+}

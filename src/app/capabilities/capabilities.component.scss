@@ -1,0 +1,31 @@
+@import '../../partial-scss/variables';
+@import '../../styles.scss';
+
+.capabilitiescols{
+    display:flex;
+    gap:50px;
+    // @extend .flexCols;
+    margin: 50px 0px 50px;
+    .solucols{
+        background: $seablueBG url('../../assets/group-4359.svg');
+        background-repeat: no-repeat;
+        border-radius: 10px;
+        div{
+            border-radius: 10px;
+            background-color: #fff;
+            padding: 14px;
+            box-shadow: 0px 70px 80px 0px rgba(0, 0, 0, 0.09);
+            color:$solsColor;     
+            font-weight:bold;
+
+            &:last-child{
+                margin-bottom: 0px;
+            }
+            span{
+                display: block;
+                color:$textgray;
+                font-weight: normal;
+            }
+        }
+}
+}

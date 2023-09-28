@@ -1,0 +1,71 @@
+@import '../../partial-scss/variables';
+
+.footer {
+    background-color:#000;
+    color:$cardBg;
+    width:100%;
+    padding: 25px;
+}
+
+// h1 {
+//     font-size: 1.5em;
+//     font-weight: bold;
+// }
+
+i {
+    font-size: 1.5em;
+    margin-right: 10px;
+    margin-top: 30px;
+    color: aqua;
+}
+
+footer {
+
+//     display: grid;
+//   grid-template-columns: 20% 20% 20% 35%;
+//   //background-color: #2196F3;
+//   padding: 10px;
+//   grid-column: auto;
+    display: flex;
+    justify-content: space-around;
+    gap: 40px;
+    // margin-top: 4vw;
+    text-transform: capitalize;
+}
+
+footer .solutions {
+    line-height: 30px;
+}
+
+footer .company ul,
+feConvolveMatrix .terms ul {
+    padding: 0px;
+    list-style-type: none;
+}
+
+footer .company li,
+footer .terms li {
+    margin-bottom: 2vh;
+}
+
+footer .Join .last {
+    display: flex;
+    margin-right: 10px;
+}
+
+footer .Join input {
+    padding: 20px;
+    border: none;
+    border-radius: 0px !important;
+}
+
+footer .Join input[type=submit] {
+    background-color: aqua;
+}
+
+.copy_right {
+    text-align: center;
+    color: white;
+    text-align: start;
+    padding: 30px 0px;
+}

@@ -1,0 +1,15 @@
+//by mixins
+//  @mixin quotebtn{
+//         border-radius: 24px;
+//         background: #06D8E4;
+//         padding: 10px;
+//         border: none;
+// }
+
+//by @extend
+.btn-quote{
+    border-radius: 24px;
+    background: #06D8E4;
+    padding: 8px 10px;
+    border: none;
+}

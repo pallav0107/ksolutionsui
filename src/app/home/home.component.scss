@@ -1,0 +1,20 @@
+@import '../../partial-scss/mixins';
+
+.home-title{
+    text-align: center;
+}
+
+//called by mixins
+// .big-btn-quote {
+//     @include quotebtn;
+//     font-size:1.5em;
+    // padding:16px 24px;
+    // font-weight: 600;
+// }
+
+//called by @extend
+.big-btn-quote {
+    @extend .btn-quote;
+    padding:16px 24px;
+    font-weight: 600;
+  }
