@@ -13,6 +13,7 @@
             margin-right: 10px;
         }
     }
+
     nav{
         ul{
         display: flex;
@@ -29,7 +30,7 @@
             padding: 6px 0; 
             }
         }
-        li a.active{
+        li.active a{
             color:$fontSpecialColor;
 
             &:hover{
