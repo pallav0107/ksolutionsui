@@ -10,6 +10,7 @@
         }
         span{
             color: $fontSpecialColor;
+            margin-right: 15px;
         }
         
         ul{
@@ -30,7 +31,7 @@
             list-style-type: none;
             display: flex;
             padding: 0px;
-            align-items: end;
+            align-items: flex-end;
             // li{
             //     display: inline-flex;
             //     align-items: center;

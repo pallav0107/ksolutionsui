@@ -1,37 +1,20 @@
 @import '../../partial-scss/variables';
 
-.footer {
-    background-color:#000;
-    color:$cardBg;
-    width:100%;
-    padding: 25px;
+.social-icons{
+    margin:10px 0;
+
+    a{
+        margin-right: 15px;
+    }
 }
 
-// h1 {
+// i {
 //     font-size: 1.5em;
-//     font-weight: bold;
+//     margin-right: 10px;
+//     margin-top: 30px;
+//     color: aqua;
 // }
 
-i {
-    font-size: 1.5em;
-    margin-right: 10px;
-    margin-top: 30px;
-    color: aqua;
-}
-
-footer {
-
-//     display: grid;
-//   grid-template-columns: 20% 20% 20% 35%;
-//   //background-color: #2196F3;
-//   padding: 10px;
-//   grid-column: auto;
-    display: flex;
-    justify-content: space-around;
-    gap: 40px;
-    // margin-top: 4vw;
-    text-transform: capitalize;
-}
 
 footer .solutions {
     line-height: 30px;
@@ -48,24 +31,36 @@ footer .terms li {
     margin-bottom: 2vh;
 }
 
-footer .Join .last {
-    display: flex;
-    margin-right: 10px;
-}
+footer{
+    background-color:#000;
+    color:$cardBg;
+    width:100%;
+    //padding: 25px;
 
-footer .Join input {
-    padding: 20px;
-    border: none;
-    border-radius: 0px !important;
-}
+    // display: flex;
+    // justify-content: space-around;
+    // gap: 40px;
+    text-transform: capitalize;
+    .last{
+        display: flex;
+        margin-right: 10px;
+    }
+    input {
+        padding: 15px;
+        border: none;
+        border-radius: 0px !important;
+    }
+    p{opacity: 0.5;}
 
-footer .Join input[type=submit] {
-    background-color: aqua;
+    input[type=submit] {
+        background-color: aqua;
+    }
 }
 
 .copy_right {
     text-align: center;
     color: white;
     text-align: start;
-    padding: 30px 0px;
+    padding-bottom: 30px;
+    background-color: #000;
 }

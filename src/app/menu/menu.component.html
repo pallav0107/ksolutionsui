@@ -10,10 +10,13 @@
     </div>
     <nav #menus [class.show]="isDivVisible" [class.hide]="!isDivVisible">
         <ul class="menu-row">
-            <li><a routerLinkActive="active" routerLink="/">Home</a>                
-            <li><a href="" routerLinkActive="active" routerLink="/services">Services</a></li>
-            <li><a href="" routerLinkActive="active" routerLink="/capabilities">Capabilities</a></li>
-            <!-- <li><a href="" routerLinkActive="active" routerLink="/test">test</a></li> -->
+            <li class="active"><a (click)="getClass($event)"  routerLink="" fragment="home">Home</a></li>
+            <li><a (click)="getClass($event)"  routerLink="" fragment="services">Services</a></li>
+            <li><a (click)="getClass($event)"  routerLink="" fragment="capabilities">Capabilities</a></li>
+
+            <!-- <li class="active"><a (click)="getClass($event, 'home')">Home</a></li>
+            <li><a (click)="getClass($event, 'services')"  >Services</a></li>
+            <li><a (click)="getClass($event, 'capabilities')" >Capabilities</a></li> -->
         </ul>
     </nav> 
     <div class="top-quote" [class.show]="!isDivVisible" [class.hide]="isDivVisible">

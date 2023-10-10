@@ -18,6 +18,7 @@ body {
     padding:64px 0px 0px 0px;
     width: $screenWidth;
     height: $screenHeight;
+    scroll-snap-type: y mandatory;
   }
   .contactpane ul{
     text-align: left;
@@ -51,6 +52,7 @@ body {
     background-attachment: inherit;
     background-repeat: no-repeat;
     background-size: 100%;
+    scroll-margin-top:64px;
 }
 
 .container-inside{
@@ -118,16 +120,6 @@ body {
       margin: 0px;
       // font-size: 4.17em;
   }
-  ul {
-      li{
-          font-size: 1.5em;
-          padding:10px;
-      img{
-          margin-right: 20px; 
-          vertical-align: middle;
-      }
-  }
-}
 }
 .bordercurved{
   width: 200px;
@@ -140,7 +132,7 @@ body {
 input, textarea {
   border-radius: 5px;
   border: solid 1px $inputbordercolor;
-  padding:5px;
+  padding:20px;
 }
 input:focus, textarea:focus {
   outline:solid 2px $fontSpecialColor;
@@ -154,3 +146,46 @@ input:focus, textarea:focus {
   font-weight: bold;
   min-width: 80px;
 }
+
+.slide-right {
+  animation: 2s slide-right;
+}
+@keyframes slide-right {
+  from {
+    margin-left: -100%;
+  }
+  to {
+    margin-left: 0%;
+  }
+}
+.slide-left {
+  animation: 2s slide-left;
+}
+// @keyframes slide-left {
+//   from {
+//     margin-left: 100%;
+//   }
+//   to {
+//     margin-left: 0%;
+//   }
+// }
+// .fade-out {
+//   animation: fadeOut ease 3s;
+// }
+// @keyframes fadeOut{
+//   0% {
+//     opacity:1;
+//   }
+//   100% {
+//     opacity:0;
+//   }
+// }
+
+// .show{
+//   @extend .slide-right;
+// }
+// .hide{
+//   @extend .slide-left;
+//   @extend.fade-out;
+
+// }
