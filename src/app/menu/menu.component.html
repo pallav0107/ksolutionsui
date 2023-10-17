@@ -6,11 +6,13 @@
         <div class="bar"></div>
     </div>   
     <div class="ksolution-logo">
-        <img src="../../assets/logo-ksolution.png"/>Ksolutions
+        <a (click)="getClass($event)"  routerLink="" fragment="home">
+            <img src="../../assets/logo-ksolution.png"/>Ksolutions
+        </a>
     </div>
     <nav #menus [class.show]="isDivVisible" [class.hide]="!isDivVisible">
         <ul class="menu-row">
-            <li class="active"><a (click)="getClass($event)"  routerLink="" fragment="home">Home</a></li>
+            <li><a class="active" (click)="getClass($event)"  routerLink="" fragment="home">Home</a></li>
             <li><a (click)="getClass($event)"  routerLink="" fragment="services">Services</a></li>
             <li><a (click)="getClass($event)"  routerLink="" fragment="capabilities">Capabilities</a></li>
 
@@ -20,6 +22,6 @@
         </ul>
     </nav> 
     <div class="top-quote" [class.show]="!isDivVisible" [class.hide]="isDivVisible">
-        <button class="btn-quote">Get a Quote</button>
+        <button class="btn-quote" (click)="getClass($event)"  routerLink="" fragment="getquote">Get a Quote</button>
     </div>
 </div>

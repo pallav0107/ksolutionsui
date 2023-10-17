@@ -22,6 +22,38 @@
                 border-radius: 8px;
                 padding:10px;
                 margin-right: 16px;
+                position: relative;
+                z-index: 8;
+                span{                    
+                    margin-right: 0px;
+                    font-size: 12px;
+                    font-weight: normal;
+                }
+                & .sol-text{
+                // color: white;
+                    mix-blend-mode: difference;
+                }
+                &:hover{
+                    color:#000;
+                    
+                    &::before{
+                    background: $fontSpecialColor;
+                    width: 100%;
+                    border-radius: 8px;
+                    }
+                }
+
+                &::before{                   
+                        transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+                        content: "";
+                        width: 0%;
+                        height: 100%;
+                        background: #fff;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        z-index: -1;             
+                }
             }
         }
     }
@@ -32,10 +64,9 @@
             display: flex;
             padding: 0px;
             align-items: flex-end;
-            // li{
-            //     display: inline-flex;
-            //     align-items: center;
-            // }            
+            li{
+                text-align: right;
+            }            
     }
 }
 }
