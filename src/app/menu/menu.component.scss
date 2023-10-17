@@ -5,12 +5,19 @@
     align-items: center;
 
     .ksolution-logo{
-        img{
-            width: 16px;
-            height: 16px;
-            position: relative;
-            top: 3px;
-            margin-right: 10px;
+        a{
+            color:$cardBg;
+            &:hover{color:$cardBg;}
+            &.active{
+                color:$fontSpecialColor;
+            }
+            img{
+                width: 16px;
+                height: 16px;
+                position: relative;
+                top: 3px;
+                margin-right: 10px;
+            }
         }
     }
 
@@ -30,17 +37,21 @@
             padding: 6px 0; 
             }
         }
-        li.active a{
+        li a.active{
             color:$fontSpecialColor;
+        }
 
-            &:hover{
-                border-bottom: 3px solid $fontSpecialColor;
+            li a.active:hover{
+                border-bottom: 3px solid $fontSpecialColor !important;
                 padding: 6px 0; 
                 }
         }
     }
-    }
     .top-quote{
         text-align: right;
+    }
+    
+    button.btn-quote:hover, button.btn-quote.active{
+        box-shadow: 2px 2px 31px #6af4fc;
     }
 }

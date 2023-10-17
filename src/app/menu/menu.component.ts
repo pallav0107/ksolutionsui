@@ -42,30 +42,53 @@ export class MenuComponent implements AfterViewInit{
   //@Output() emitter:EventEmitter<any> = new EventEmitter<any>();
   getClass(event:any){
 
-   let el = event.target as HTMLElement;
-   let lis:HTMLCollection = el.parentElement.parentElement.children;
-   const siblings = Array.from(lis);
+    let el = event.target as HTMLElement;
+    el.classList.add('active');
 
-    // Remove the class from all siblings
-    siblings.forEach((eachLi: HTMLElement) => {
-      if(eachLi.classList.contains("active")){
-        eachLi.classList.remove('active');
-       }
-    });
-    // Add the class to the clicked element (event.target)
-    event.target.parentElement.classList.add('active');
+    let elements = document.querySelectorAll('.active');
+    console.log(elements.length);
+
+    if(elements.length > 1){
+
+      elements.forEach(function (element) {
+        console.log(element.innerHTML);
+        element.classList.remove('active');
+        el.classList.add('active');
+       
+      });      
+    }
     this.isDivVisible = false;
-
+    
+    // else {
+    //   el.classList.add('active');
+    //     this.isDivVisible = false;
+    // }
+  
+  
    
 
-      // console.log(elm);
-      // xx.scroll(
-      //   {behavior: 'smooth',
-      //   left: 0,
-      //  // top: pos.y
-      // }
-      //{ behavior: 'smooth', block: 'start' }
-      //);
+  //  let lis:HTMLCollection = el.parentElement.parentElement.children;
+  //  const siblings = Array.from(lis);
+  // console.log(lis);
+  //  let homeLink = el.innerText == 'Ksolutions' ? true : false;
+
+//console.log(el.innerText + homeLink);
+
+    // Remove the class from all siblings
+    // siblings.forEach((eachLi: HTMLElement) => {
+    //   if(eachLi.classList.contains("active")){
+    //     eachLi.classList.remove('active');
+    //    }
+    // });
+    // Add the class to the clicked element (event.target)
+    // if(homeLink){
+    //   event.target.parentElement.classList.add('LogoActive');
+    // }else{
+    //   event.target.parentElement.classList.add('active');
+    // this.isDivVisible = false;
+    // }
+
+   
 
   }
 

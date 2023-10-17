@@ -1,16 +1,18 @@
-<div class="container-inside">
+<div class="container-inside" id="getquote">
     <div class="contactpane">
         <h1>Get a Quote</h1>
     <div class="bordercurved"></div>
-    <div class="grid">
-        <input type="text" name="Fullname" placeholder="Fullname" id="Fullname"/>
-        <input type="text" name="Company" placeholder="Company" id="Company"/>
-        <input type="number" name="Telephone" placeholder="Telephone" id="Telephone"/>
-        <input type="text" name="Business Email" placeholder="Business Email" id="Business Email"/>
-    </div>
-    <div class="textareabox">
-        <textarea placeholder="Message" id="msg" name="msg" class="textboxMsg"></textarea>
-        <input type="button" value="Send" class="sendbtn"/>
-    </div> 
+        <form [formGroup]="quoteForm" (ngSubmit)="onSubmit(quoteForm.valid, quoteForm.value)">
+            <div class="grid">
+                <input formControlName="fullName" type="text" name="Fullname" placeholder="Fullname" id="Fullname"/>
+                <input formControlName="company" type="text" name="Company" placeholder="Company" id="Company"/>
+                <input formControlName="phone" type="number" name="Telephone" placeholder="Telephone" id="Telephone"/>
+                <input formControlName="email" type="text" name="Business Email" placeholder="Business Email" id="Business Email"/>
+            </div>
+            <div class="textareabox">
+                <textarea formControlName="message" placeholder="Message" id="msg" name="msg" class="textboxMsg"></textarea>
+                <input type="submit" value="Send" class="sendbtn"/>
+            </div> 
+        </form>
     </div>
     </div>

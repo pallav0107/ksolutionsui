@@ -117,6 +117,7 @@ $breakpoint: (
         .clientBG{
             ul{
                 justify-content:start;
+                gap:5%;
 
                 &::-webkit-scrollbar{
                     display: none;
@@ -308,7 +309,7 @@ $breakpoint: (
             justify-content:left;
         }
         .cardPane{
-            width:45%; 
+            width:calc(50% - 10px); 
         }
         .btn-quote{font-size: 12px;}
     };
@@ -326,6 +327,9 @@ $breakpoint: (
             margin:0 0px;
             ul{
                 justify-content: end;
+                li{
+                    text-align: right;
+                }
             }
         }
         .home-solutionsPro .solu-pro-text{
@@ -380,11 +384,12 @@ $breakpoint: (
           }
          }
          .solucols{
-            width:530px;
+            width:50%;
             padding: 50px 0px;
             div{
                 margin: 0px 50px;
                 margin-bottom: 20px;
+                font-size: 1.5em;
             }
             .cisco{
                 margin-left:  80px;
@@ -404,16 +409,18 @@ $breakpoint: (
             }
         }
         .exelexperties{
-            width:530px;
+            width:50%;
             h2{
-                font-size: 4.2em;
+                font-size: 5em;
             }
         }
         .serives-pro-icons{
             overflow-x:hidden;
-            gap:20px;
+            gap:35px;
+            margin:40px 0px;
             a{
-                font-size: 1.4em;
+                font-size: 1.5em;
+                padding: 0px 0px 8px 0px;
             }
             img{
                 margin-right:16px;
@@ -438,7 +445,7 @@ $breakpoint: (
         // img.certified{
         //     width:65px;
         // }
-        .cardPane{width:30%;}
+        .cardPane{ width: calc(33% - 12px);}
 
         nav{display: block;}
 
@@ -521,17 +528,33 @@ $breakpoint: (
     };
     //959-1199
     @include lg{
-    
-        .cardPane{width:30%;}
-
+        .clientBG{
+            ul{
+                justify-content:start;
+                gap: 3%;
+            }
+        }
     };
     //1200-1399
     @include xl{
         .cardsBox{justify-content: start;}
-        .cardPane{width:22%;}
+        .clientBG{
+            ul{
+                justify-content:center;
+                gap: 16px;
+            }
+            
+        }
     };
     //1400 and above
     @include breakpoints(1400px){
+        .clientBG{
+            ul{
+                justify-content:center;
+                gap: 3%;
+            }
+            
+        }
         // .container-fluid{background-color: rgb(255, 242, 0);}
     }
 //}
