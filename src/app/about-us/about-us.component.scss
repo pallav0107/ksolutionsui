@@ -1,5 +1,7 @@
 
 .teamprofile{
+    display: flex;
+    flex-direction: column;
     width:150px;
     text-align: center;
     img{

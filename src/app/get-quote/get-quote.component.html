@@ -11,8 +11,11 @@
             </div>
             <div class="textareabox">
                 <textarea formControlName="message" placeholder="Message" id="msg" name="msg" class="textboxMsg"></textarea>
+                <label for="captcha">{{ mathProblem }} = </label>
+                <input type="number" class="form-control" id="captcha" formControlName="answer" placeholder="Your Answer">
                 <input type="submit" value="Send" class="sendbtn"/>
             </div> 
+            <div *ngIf="feedbackMessage" class="invalid-feedback">{{ feedbackMessage }}</div>
         </form>
     </div>
     </div>

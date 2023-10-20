@@ -19,13 +19,13 @@ import { provideFirebaseApp, getApp, initializeApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAbolLPxom1oMA-xUdG_A7IAwAbXlsebSM",
-  authDomain: "ksolutions-f9b53.firebaseapp.com",
-  projectId:"ksolutions-f9b53",
-  storageBucket:"ksolutions-f9b53.appspot.com",
-  messagingSenderId: "138573951630",
-  appId: "1=138573951630=web=5132096b78b21ff13acfdf",
-  measurementId: "G-DLLFSBCFK8",
+  apiKey: "AIzaSyCBRfEYbv9-VAStUZ5XvGsWgXKRLcsQryo",
+  authDomain: "k-solutions-a4ecf.firebaseapp.com",
+  projectId:"k-solutions-a4ecf",
+  storageBucket:"k-solutions-a4ecf.appspot.com",
+  messagingSenderId: "782171856224",
+  appId: "1:782171856224:web:e35fcb820a4be2a117d205",
+  measurementId: "G-V137QJ9DZH",
 };
 @NgModule({
   declarations: [
